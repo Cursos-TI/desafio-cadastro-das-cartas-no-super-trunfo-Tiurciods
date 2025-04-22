@@ -91,6 +91,12 @@ int main() {
     scanf("%d", &turistico2);
     printf("\n\n");
 
+    // Adcionando os atriuitos para ter o PIB per capita e a densidade populacional (Carta 01)
+
+    float quociente1 = (float) populacao1 / area1;
+    float quociente2 = (float) pib1 / populacao1;
+    float quociente3 = (float) populacao2 / area2;
+    float quociente4 = (float) pib2 / populacao2; 
 
     //printf(''texto com formatação'', variavel1, variavel2, ...);
 
@@ -104,7 +110,9 @@ int main() {
     printf("População: %d\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f Bilhões de reais\n", pib1);
-    printf("Número de Pontos Turísticos: %d\n\n", turistico1);
+    printf("Número de Pontos Turísticos: %d\n", turistico1);
+    printf("Densidade Populacional: %.2f hab/km²\n", quociente1);
+    printf("PIB per Capita: %.2f reais\n\n", quociente2);
 
     // Dados da Carta 02
     
@@ -116,13 +124,15 @@ int main() {
     printf("População: %d\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f Bilhões de reais\n", pib2);
-    printf("Número de Pontos Turísticos: %d\n\n", turistico2);
+    printf("Número de Pontos Turísticos: %d\n", turistico2);
+    printf("Densidade Populacional: %.2f hab/km²\n", quociente3);
+    printf("PIB per Capita: %.2f reais\n\n", quociente4);
     printf("Final do Cadastramento\n\n");
 
 }
 /*
 %d: Imprime um inteiro no formato decimal.
- 
+
 %i: Equivalente a %d.
  
 %f: Imprime um número de ponto flutuante no formato padrão.
