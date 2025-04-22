@@ -3,6 +3,7 @@
 int main() {
 
     // Variavéis das Cartas 01 e 02
+    
     char letra1, letra2;
     char codigo1[3], codigo2[3]; 
     char cidade1[20], cidade2[20];
