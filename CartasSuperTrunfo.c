@@ -137,11 +137,11 @@ int main() {
     printf("Final do Cadastramento\n\n");
 
     printf("A carta 01 é maior que a carta 02 em termos de Polulção? %d\n", populacao1 >= populacao2);
-    printf("A carta 01 é maior que a carta 02 em termos de Área? %.2f\n", area1 >= area2);
-    printf("A carta 01 é maior que a carta 02 em termos de PIB? %.2f\n", pib1 >= pib2);
-    printf("A carta 01 é maior que a carta 02 em termos de Pib Per Capita? %.2f\n", PibPerCapita1 >= PibPerCapita2);
+    printf("A carta 01 é maior que a carta 02 em termos de Área? %d\n", area1 >= area2);
+    printf("A carta 01 é maior que a carta 02 em termos de PIB? %d\n", pib1 >= pib2);
+    printf("A carta 01 é maior que a carta 02 em termos de Pib Per Capita? %d\n", PibPerCapita1 >= PibPerCapita2);
     printf("A carta 01 é maior que a carta 02 em termos de Pontos Turísticos? %d\n", turistico1 >= turistico2);
-    printf("A carta 01 é maior que a carta 02 em termos de Densidade de População? %.2f\n", (densidade1 * -1) >= (densidade2 * -1));
+    printf("A carta 01 é maior que a carta 02 em termos de Densidade de População? %d\n", (densidade1 * -1) >= (densidade2 * -1));
     printf("A carta 01 é maior que a carta 02 em termos de Super Poder? %d\n\n", superpoder1 >= superpoder2);
     printf("Fim do Nível Mestre!\n\n");
 
