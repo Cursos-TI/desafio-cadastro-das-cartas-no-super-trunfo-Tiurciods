@@ -93,10 +93,15 @@ int main() {
 
     // Adcionando os atriuitos para ter o PIB per capita e a densidade populacional (Carta 01)
 
-    float quociente1 = (float) populacao1 / area1;
-    float quociente2 = (float) pib1 / populacao1;
-    float quociente3 = (float) populacao2 / area2;
-    float quociente4 = (float) pib2 / populacao2; 
+    float densidade1 = (float) populacao1 / area1;
+    float PibPerCapita1 = (float) pib1 * 1000000000 / populacao1;
+    float densidade2 = (float) populacao2 / area2;
+    float PibPerCapita2 = (float) pib2 * 1000000000 / populacao2; 
+
+    //Calcular o Super Poder
+
+    float superpoder1 = (float) populacao1 + area1 + pib1 + turistico1 + PibPerCapita1 + (densidade1 * -1);
+    float superpoder2 = (float) populacao2 + area2 + pib2 + turistico2 + PibPerCapita2 + (densidade2 * -1);
 
     //printf(''texto com formatação'', variavel1, variavel2, ...);
 
@@ -111,8 +116,9 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f Bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", turistico1);
-    printf("Densidade Populacional: %.2f hab/km²\n", quociente1);
-    printf("PIB per Capita: %.2f reais\n\n", quociente2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: %.2f reais\n", PibPerCapita1);
+    printf("Super Poder: %.2f\n\n", superpoder1);
 
     // Dados da Carta 02
     
@@ -125,9 +131,19 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f Bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", turistico2);
-    printf("Densidade Populacional: %.2f hab/km²\n", quociente3);
-    printf("PIB per Capita: %.2f reais\n\n", quociente4);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("PIB per Capita: %.2f reais\n", PibPerCapita2);
+    printf("Super Poder: %.2f\n\n", superpoder2);
     printf("Final do Cadastramento\n\n");
+
+    printf("A carta 01 é maior que a carta 02 em termos de Polulção? %d\n", populacao1 >= populacao2);
+    printf("A carta 01 é maior que a carta 02 em termos de Área? %.2f\n", area1 >= area2);
+    printf("A carta 01 é maior que a carta 02 em termos de PIB? %.2f\n", pib1 >= pib2);
+    printf("A carta 01 é maior que a carta 02 em termos de Pib Per Capita? %.2f\n", PibPerCapita1 >= PibPerCapita2);
+    printf("A carta 01 é maior que a carta 02 em termos de Pontos Turísticos? %d\n", turistico1 >= turistico2);
+    printf("A carta 01 é maior que a carta 02 em termos de Densidade de População? %.2f\n", (densidade1 * -1) >= (densidade2 * -1));
+    printf("A carta 01 é maior que a carta 02 em termos de Super Poder? %d\n\n", superpoder1 >= superpoder2);
+    printf("Fim do Nível Mestre!\n\n");
 
 }
 /*
