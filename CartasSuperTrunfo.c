@@ -143,7 +143,12 @@ int main() {
     printf("A carta 01 é maior que a carta 02 em termos de Pontos Turísticos? %d\n", turistico1 >= turistico2);
     printf("A carta 01 é maior que a carta 02 em termos de Densidade de População? %d\n", (densidade1 * -1) >= (densidade2 * -1));
     printf("A carta 01 é maior que a carta 02 em termos de Super Poder? %d\n\n", superpoder1 >= superpoder2);
-    printf("Fim do Nível Mestre!\n\n");
+    
+    if(pib1 > pib2){
+        printf("O PIB da carta 1 venceu! \n");
+    } else {
+        printf("O PIB da carta 2 venceu! \n");
+    }  
 
 }
 /*
